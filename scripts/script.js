@@ -17,6 +17,10 @@ window.addEventListener('DOMContentLoaded', () => {
     const header = document.querySelector('header')
     header.style.opacity = 1;
 
+    document.querySelectorAll('a').forEach(function(link) {
+      link.target = '_blank';
+    });
+
     setTimeout(() => {
         const ul = document.querySelector('ul')
         ul.style.opacity = 1;
